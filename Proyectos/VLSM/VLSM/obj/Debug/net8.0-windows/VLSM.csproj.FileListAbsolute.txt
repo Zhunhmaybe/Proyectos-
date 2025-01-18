@@ -1,0 +1,40 @@
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.exe
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.deps.json
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.runtimeconfig.json
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.pdb
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.Form1.resources
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.GenerateResource.cache
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.AssemblyInfo.cs
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\refint\VLSM.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.pdb
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.genruntimeconfig.cache
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\ref\VLSM.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\U\Info 4\Redes de datos\Tareas\Proyecto1\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.Up2Date
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.exe
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.deps.json
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.runtimeconfig.json
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.dll
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\VLSM.pdb
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.Form1.resources
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.GenerateResource.cache
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.AssemblyInfo.cs
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.csproj.Up2Date
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.dll
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\refint\VLSM.dll
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.pdb
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\VLSM.genruntimeconfig.cache
+C:\Users\User\Desktop\U\visual studio\Proyectos\ProyectoVLSM\VLSM\VLSM\obj\Debug\net8.0-windows\ref\VLSM.dll
