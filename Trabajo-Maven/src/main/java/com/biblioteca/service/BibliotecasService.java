@@ -74,15 +74,16 @@ public class BibliotecasService {
     // Métodos para Préstamos
     public Prestamos prestarMaterial(PrestamoDTO prestamoDTO) {
         Clientes cliente = clientesRepository.findByCedula(prestamoDTO.getCedula())
-            .orElseThrow(() -> new RuntimeException("Cliente no encontrado"));
+            .orElseThrow(() -> null);
         Materiales material = materialesRepository.findByMaterialId(prestamoDTO.getMaterialId())
-            .orElseThrow(() -> new RuntimeException("Material no encontrado"));
+            .orElseThrow(() -> null);
         
         if (material.getStock() > 0) {
             Prestamos prestamo = new Prestamos(prestamoDTO.getMaterialId(), prestamoDTO.getCedula());
             Prestamos prestamoGuardado = prestamosRepository.save(prestamo);
             material.setStock(material.getStock() - 1);
             materialesRepository.save(material);
+            System.out.println("Préstamo realizado con éxito.");
             return prestamoGuardado;
         }
         else {
@@ -112,6 +113,7 @@ public class BibliotecasService {
         material.setStock(material.getStock() + 1);
         materialesRepository.save(material);
 
+        System.out.println("Devolución realizada con éxito.");
         return Optional.of(prestamoActualizado);
     }
 
