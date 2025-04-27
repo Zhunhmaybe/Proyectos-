@@ -21,8 +21,7 @@ public class Main implements CommandLineRunner {
         Scanner escanear = new Scanner(System.in);
         int usuario;
         String cedula;
-        
-
+        String tipo = "";
         System.out.println("Bienvenido a la biblioteca");
 
         do {
@@ -36,8 +35,20 @@ public class Main implements CommandLineRunner {
                 escanear.nextLine(); // Limpiar el buffer
 
                 if (eliminar == 1) {
-                    System.out.println("Ingrese tipo de material (libro, revista, diccionario):");
-                    String tipo = escanear.nextLine().toLowerCase();
+                    System.out.println("Ingrese tipo de material (1:libro, 2:revista, 3:diccionario):");
+                    int tipoMaterial = escanear.nextInt();
+                    escanear.nextLine(); // Limpiar el buffer
+                    // Determinar el tipo de material
+                    if ( tipoMaterial == 1) {
+                        tipo = "libro";
+                    } else if (tipoMaterial == 2) {
+                        tipo = "revista";
+                    } else if (tipoMaterial == 3) {
+                        tipo = "diccionario";
+                    } else {
+                        System.out.println("Tipo de material no válido");
+                        continue;
+                    }
 
                     System.out.println("ID del material:");
                     String id = escanear.nextLine();
@@ -61,8 +72,14 @@ public class Main implements CommandLineRunner {
                             material.setVolumen(escanear.nextInt());
                         }
                         case "diccionario" -> {
-                            System.out.println("Idioma:");
-                            material.getIdiomas().add(escanear.nextLine());
+                            System.out.println("cuantos idiomas quiere agregar:");
+                            int idiomas = escanear.nextInt();
+                            escanear.nextLine(); // Limpiar el buffer
+                            for ( int i = 0; i < idiomas; i++) {
+                                System.out.println("Idioma " + (i + 1) + ":");
+                                String idioma = escanear.next();
+                                material.getIdiomas().add(idioma);
+                            }
                         }
                     }
                     // Guardar el material
@@ -126,6 +143,7 @@ public class Main implements CommandLineRunner {
                     }
                     case 2 -> {
                         // Listar préstamos
+                        System.out.println("Lista de préstamos:");
                         biblioteca.listarPrestamosPorCliente(cedula).forEach(p -> 
                             System.out.println("id: " + p.getMaterialId() + ", devuelto: " + p.isDevuelto()));
 

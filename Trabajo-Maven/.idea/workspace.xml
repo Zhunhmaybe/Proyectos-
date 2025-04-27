@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0df4c38e-b0ec-441c-9f62-5cb42d7d721d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trabajo-Maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblioteca/BibliotecasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biblioteca/BibliotecasApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biblioteca/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biblioteca/model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblioteca/repository/PrestamosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biblioteca/repository/PrestamosRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/biblioteca/service/BibliotecasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/biblioteca/service/BibliotecasService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/biblioteca/BibliotecasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biblioteca/BibliotecasApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/biblioteca/model/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biblioteca/model/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/biblioteca/repository/PrestamosRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biblioteca/repository/PrestamosRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/biblioteca/service/BibliotecasService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/biblioteca/service/BibliotecasService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
