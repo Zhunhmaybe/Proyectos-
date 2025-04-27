@@ -21,6 +21,7 @@ public class Main implements CommandLineRunner {
         Scanner escanear = new Scanner(System.in);
         int usuario;
         String cedula;
+        
 
         System.out.println("Bienvenido a la biblioteca");
 
@@ -32,22 +33,24 @@ public class Main implements CommandLineRunner {
                 System.out.println("Bienvenido admin");
                 System.out.println("Desea eliminar o agregar materiales? 1:agregar , 2:eliminar");
                 int eliminar = escanear.nextInt();
+                escanear.nextLine(); // Limpiar el buffer
 
                 if (eliminar == 1) {
                     System.out.println("Ingrese tipo de material (libro, revista, diccionario):");
-                    String tipo = escanear.next().toLowerCase();
+                    String tipo = escanear.nextLine().toLowerCase();
 
                     System.out.println("ID del material:");
-                    String id = escanear.next();
+                    String id = escanear.nextLine();
                     System.out.println("Título:");
-                    String titulo = escanear.next();
+                    String titulo = escanear.nextLine();
                     System.out.println("Autor:");
-                    String autor = escanear.next();
+                    String autor = escanear.nextLine();
                     System.out.println("Stock:");
                     int stock = escanear.nextInt();
 
                     Materiales material = new Materiales(tipo, id, titulo, autor, stock);
 
+                    //casps de libros o revistas y diccionarios
                     switch (tipo) {
                         case "libro" -> {
                             System.out.println("Número de páginas:");
@@ -59,63 +62,80 @@ public class Main implements CommandLineRunner {
                         }
                         case "diccionario" -> {
                             System.out.println("Idioma:");
-                            material.getIdiomas().add(escanear.next());
+                            material.getIdiomas().add(escanear.nextLine());
                         }
                     }
-                    
-                    
+                    // Guardar el material
                     biblioteca.guardarMaterial(material);
-                } else if (eliminar == 2) {
+
+                }
+                // Eliminar material
+                else if (eliminar == 2) {
                     biblioteca.listarMateriales().forEach(m -> 
                         System.out.println(m.getMaterialId() + " - " + m.getTitulo()));
                     System.out.println("ID del material a eliminar:");
-                    biblioteca.eliminarMaterial(escanear.next());
+                    biblioteca.eliminarMaterial(escanear.nextLine());
                 }
+                // Listar materiales
                 System.out.println("Lista de materiales:");
                 biblioteca.listarMateriales().forEach(m -> 
-                        System.out.println(m.getMaterialId() + " - " + m.getTitulo()));
+                        System.out.println("id: " + m.getMaterialId() + ", titulo: " + m.getTitulo() +
+                                ", autor: " + m.getAutor() + ", stock: " + m.getStock()));
                         
 
-            } else if (usuario == 2) {
+            }
+            // Cliente
+            else if (usuario == 2) {
                 System.out.println("Crear nuevo cliente? 1:si , 2:no");
                 int nuevo = escanear.nextInt();
+                escanear.nextLine(); // Limpiar el buffer
                 if (nuevo == 1) {
                     System.out.println("Cedula:");
-                    cedula = escanear.next();
+                    cedula = escanear.nextLine();
                     System.out.println("Nombre:");
-                    String nombre = escanear.next();
+                    String nombre = escanear.nextLine();
                     System.out.println("Apellido:");
-                    String apellido = escanear.next();
+                    String apellido = escanear.nextLine();
                     System.out.println("Correo:");
-                    String correo = escanear.next();
+                    String correo = escanear.nextLine();
 
                     Clientes cliente = new Clientes(cedula, nombre, apellido, correo);
                     biblioteca.guardarCliente(cliente);
                 }
 
-                System.out.println("Acción: 1:prestar, 2:devolver, 3:ver préstamos");
+                System.out.println("Acción: 1:prestamo, 2:devolucion, 3:ver préstamos");
                 int accion = escanear.nextInt();
+                escanear.nextLine(); // Limpiar el buffer
 
                 System.out.println("Cedula:");
-                cedula = escanear.next();
+                cedula = escanear.nextLine();
 
+                // Realizar acción
                 switch (accion) {
+                    // Prestar material
                     case 1 -> {
-                        biblioteca.listarMateriales().forEach(m -> 
-                            System.out.println(m.getMaterialId() + " - " + m.getTitulo()));
+                        // Listar materiales
+                        System.out.println("Lista de materiales:");
+                        biblioteca.listarMateriales().forEach(m ->
+                                System.out.println("id: " + m.getMaterialId() + ", titulo: " + m.getTitulo() +
+                                        ", autor: " + m.getAutor() + ", stock: " + m.getStock()));
+
                         System.out.println("ID del material:");
-                        String materialId = escanear.next();
+                        String materialId = escanear.nextLine();
                         biblioteca.prestarMaterial(new com.biblioteca.dto.PrestamoDTO(cedula,materialId));
                     }
                     case 2 -> {
+                        // Listar préstamos
                         biblioteca.listarPrestamosPorCliente(cedula).forEach(p -> 
-                            System.out.println(p.getId() + " - " + p.getMaterialId()));
-                        System.out.println("ID del préstamo a devolver:");
+                            System.out.println("id: " + p.getMaterialId() + ", devuelto: " + p.isDevuelto()));
+
+                        System.out.println("ID del material a devolver:");
                         String prestamoId = escanear.next();
                         biblioteca.devolverMaterial(prestamoId);
                     }
-                    case 3 -> biblioteca.listarPrestamosPorCliente(cedula)
-                        .forEach(p -> System.out.println(p.getMaterialId() + " - Devuelto: " + p.isDevuelto()));
+                    case 3 -> biblioteca.listarPrestamosPorCliente(cedula).forEach(p ->
+                            System.out.println("id: " + p.getMaterialId() + ", devuelto: " + p.isDevuelto()+
+                                    ", fecha de devolución: " + p.getFechaDevolucion()));
                 }
             }
         } while (usuario != 3);

@@ -85,26 +85,36 @@ public class BibliotecasService {
             materialesRepository.save(material);
             return prestamoGuardado;
         }
-        throw new RuntimeException("No hay stock disponible del material");
+        else {
+            System.out.println("No hay stock disponible del material.");
+            return null;  // Retorna null o puedes manejarlo de otra forma si lo prefieres.
+        }
     }
 
-    public Optional<Prestamos> devolverMaterial(String id) {
-        return prestamosRepository.findById(id)
-            .map(prestamo -> {
-                if (!prestamo.isDevuelto()) {
-                    prestamo.setDevuelto(true);
-                    prestamo.setFechaDevolucion(new Date());
-                    Prestamos prestamoActualizado = prestamosRepository.save(prestamo);
-                    
-                    Materiales material = materialesRepository.findByMaterialId(prestamo.getMaterialId())
-                        .orElseThrow(() -> new RuntimeException("Material no encontrado"));
-                    material.setStock(material.getStock() + 1);
-                    materialesRepository.save(material);
-                    return prestamoActualizado;
-                }
-                throw new RuntimeException("El préstamo ya ha sido devuelto");
-            });
+    public Optional<Prestamos> devolverMaterial(String materialId) {
+        List<Prestamos> prestamos = prestamosRepository.findByMaterialId(materialId);
+        Prestamos prestamo = prestamos.stream()
+                .filter(p -> !p.isDevuelto() && p.getMaterialId().equals(materialId))
+                .findFirst()
+                .orElse(null);
+
+        if (prestamo == null) {
+            System.out.println("Préstamo no encontrado para el materialId: " + materialId);
+            return Optional.empty();
+        }
+
+        prestamo.setDevuelto(true);
+        prestamo.setFechaDevolucion(new Date());
+        Prestamos prestamoActualizado = prestamosRepository.save(prestamo);
+        Materiales material = materialesRepository.findByMaterialId(prestamo.getMaterialId())
+                .orElseThrow(() -> null);
+
+        material.setStock(material.getStock() + 1);
+        materialesRepository.save(material);
+
+        return Optional.of(prestamoActualizado);
     }
+
 
     public List<Prestamos> listarPrestamos() {
         return prestamosRepository.findAll();

@@ -8,5 +8,6 @@ public class BibliotecasApplication {
     public static void main(String[] args) {
         SpringApplication.run(BibliotecasApplication.class, args);
         System.out.println("Aplicación de biblioteca iniciada correctamente");
+        System.out.println();
     }
 }
